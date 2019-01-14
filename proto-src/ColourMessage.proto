@@ -1,0 +1,24 @@
+syntax = "proto3";
+
+package com.criss.wang.entity.proto;
+
+option java_outer_classname="ColourProto";
+
+import "google/protobuf/any.proto";
+
+message ColourMessage {
+  string name = 1;
+  google.protobuf.Any childMessage = 2;
+  google.protobuf.Any redMessage = 3;
+  google.protobuf.Any blueMessage = 4;
+}
+
+message RedMessage{
+	string name = 1;
+	int32 number = 2;
+}
+
+message BlueMessage{
+	string name = 1;
+	int32 number = 2;
+}
